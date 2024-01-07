@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: dimgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  top: 2rem;
+  padding: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.thingsList {
+  width: 100%;
+}
+
+#header {
+  padding: 1rem;
+  text-align: center;
+  border: 1.5px solid rgb(54, 54, 54);
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+
+/* ===== INPUT SECTION ===== */
+.inputDiv {
+  margin: 1rem 0;
+  position: relative;
+}
+
+.input {
+  width: 100%;
+}
+
+.addButton {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 0.3rem;
+}
+
+/* ===== NOTE DIV CONTAINER ===== */
+.notesDivHolder {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== NOTE DIV ===== */
+.noteDiv {
+  position: relative;
+  border: 1px solid black;
+  user-select: none;
+  cursor: pointer;
+  width: 100%;
+  height: 6rem;
+  margin-bottom: 0.3rem;
+  display: flex;
+  align-items: center;
+  background-color: lightgray;
+  border-radius: 0.5rem;
+}
+
+textarea {
+  position: absolute;
+  resize: none;
+  top: 0;
+  background-color: white;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  line-height: normal;
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.linethrough {
+  text-decoration: line-through;
+}
+
+/* ===== EDIT & TRASH ICONS ===== */
+.icons {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0.2rem;
+  left: 0.5rem;
+  width: 4rem;
+  font-size: 1.5rem;
+  margin-right: 0.6rem;
+}
+
+.trashIcon {
+  cursor: pointer;
+  color: rgb(255, 0, 0);
+}
+
+.editIcon {
+  cursor: pointer;
+  color: black;
+}
+
+.editSection {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+
+.save,
+.cancel {
+  background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 0.3rem;
+  margin-right: 0.3rem;
+  padding: 0.2rem;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 70%;
+  }
+}
